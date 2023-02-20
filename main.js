@@ -3,10 +3,10 @@ const ghost = document.getElementById("ghost");
 const pillars = document.getElementById("pillars");
 const hole = document.getElementById("hole");
 const start = document.getElementById("start");
+const scoreValue = document.getElementById("score");
 
-let score = 0;
 let gameOver = false;
-
+let score = 0;
 
 let ghostBottom = 500
 let ghostLeft = 500
@@ -28,7 +28,8 @@ function movePillars() {
     hole.addEventListener("animationiteration", () => {
         let random = -((Math.random()*300)+250);
         hole.style.top = random + "px";
-
+        score ++
+        scoreValue.innerHTML = ("Score :" + score);
     });
 }
 movePillars()
@@ -40,6 +41,7 @@ function fly() {
     console.log(fly)
 }
 document.addEventListener("click", fly)
+
 
 function gameEnd() {
     clearInterval(timerID)
