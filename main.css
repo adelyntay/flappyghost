@@ -29,6 +29,7 @@
     height: 600px;
     margin-left: 300px;
     margin-top: 50px;
+    position: relative;
     border: 2px solid black;
     background: black;
     overflow: hidden;
@@ -36,32 +37,55 @@
 
 /* how to use animation: https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php */
 
-#pillars {
+#pillarOne {
     width: 50px;
     height: 600px;
     background: #f9d4fa;
-    position: relative;
-    left: 1000px; 
-    animation: pillars 3s infinite;
+    position: absolute;
+    left: 800px; 
+    animation: pillarOne 10s linear infinite;
 }
 
+@keyframes pillarOne{
+    from {left: 800px}
+    to {left:-50px}
+}
 
-@keyframes pillars{
+#holeOne {
+    width: 50px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    left: 800px;
+    top: 200px;
+    animation: pillarOne 10s linear infinite;
+
+}
+
+#pillarTwo {
+    width: 50px;
+    height: 600px;
+    background: #f9d4fa;
+    position: absolute;
+    left: 1000px; 
+    animation: pillarTwo 15s linear infinite;
+}
+
+@keyframes pillarTwo{
     from {left: 1000px}
     to {left:-50px}
 }
 
-#hole {
+#holeTwo {
     width: 50px;
     height: 100px;
     background-color: black;
-    position: relative;
+    position: absolute;
     left: 1000px;
-    top: -300px;
-    animation: pillars 3s infinite;
+    top: 400px;
+    animation: pillarTwo 15s linear infinite;
 
 }
-
 
 #ghost {
     height: 25px;
