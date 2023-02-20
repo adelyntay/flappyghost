@@ -4,8 +4,8 @@ const pillars = document.getElementById("pillars");
 const hole = document.getElementById("hole");
 const start = document.getElementById("start");
 const scoreValue = document.getElementById("score");
+const gameOver = document.getElementById("gameOver");
 
-let gameOver = false;
 let score = 0;
 
 let ghostBottom = 500
@@ -18,7 +18,7 @@ function startGame() {
     ghost.style.bottom = ghostBottom + "px"
     ghost.style.left = ghostLeft + "px"
     
-    if(ghostBottom === 150 || ghostBottom === 700){
+    if(ghostBottom === 150 || ghostBottom === 680){
         gameEnd();
     }
 }
@@ -28,12 +28,13 @@ function movePillars() {
     hole.addEventListener("animationiteration", () => {
         let random = -((Math.random()*300)+250);
         hole.style.top = random + "px";
+        
         score ++
         scoreValue.innerHTML = ("Score :" + score);
     });
+
 }
 movePillars()
-
 
 function fly() {
     ghostBottom += 50
@@ -45,7 +46,8 @@ document.addEventListener("click", fly)
 
 function gameEnd() {
     clearInterval(timerID)
-    gameOver = true
     document.removeEventListener("click", fly)
-    alert("Game Over")
+    pillars.style.animation = "paused";
+    hole.style.animation = "paused";
+    gameOver.innerHTML = ("Game Over");
 }

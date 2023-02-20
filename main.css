@@ -42,7 +42,7 @@
     background: #f9d4fa;
     position: relative;
     left: 1000px; 
-    animation: pillars 4s infinite;
+    animation: pillars 3s infinite;
 }
 
 
@@ -58,9 +58,10 @@
     position: relative;
     left: 1000px;
     top: -300px;
-    animation: pillars 4s infinite;
+    animation: pillars 3s infinite;
 
 }
+
 
 #ghost {
     height: 25px;
@@ -71,3 +72,11 @@
     z-index: 1;
 }
 
+#gameOver {
+    font-family: "permanent marker", cursive;
+    font-size: 30px;
+    color: red;
+    margin-left: 410px;
+    position: absolute;
+    bottom: 500px;
+}
