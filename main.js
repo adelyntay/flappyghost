@@ -14,6 +14,11 @@ let ghostBottom = 500
 let ghostLeft = 300
 let gravity = 2
 
+let pillarOneLeft = 600
+let pillarTwoLeft = 800
+let holeOneLeft = 600
+let holeTwoLeft = 800
+
 
 function startGame() {
     ghostBottom -= gravity
@@ -43,6 +48,11 @@ function movePillars() {
 }
 let pillarID = setInterval(movePillars, 20)
 
+function getScore() {
+    score++;
+    scoreValue.innerHTML = ("Score :" + score);
+}
+
 function fly() {
     ghostBottom += 50
     ghost.style.bottom = ghostBottom + "px"
@@ -54,9 +64,5 @@ document.addEventListener("click", fly)
 function gameEnd() {
     clearInterval(timerID)
     document.removeEventListener("click", fly)
-    pillarOne.style.animation = "paused";
-    holeOne.style.animation = "paused";
-    pillarTwo.style.animation = "paused";
-    holeTwo.style.animation = "paused";
     gameOver.innerHTML = ("Game Over");
 }
