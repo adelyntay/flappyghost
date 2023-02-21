@@ -43,12 +43,6 @@
     background: #f9d4fa;
     position: absolute;
     left: 800px; 
-    animation: pillarOne 10s linear infinite;
-}
-
-@keyframes pillarOne{
-    from {left: 800px}
-    to {left:-50px}
 }
 
 #holeOne {
@@ -58,8 +52,6 @@
     position: absolute;
     left: 800px;
     top: 200px;
-    animation: pillarOne 10s linear infinite;
-
 }
 
 #pillarTwo {
@@ -68,13 +60,8 @@
     background: #f9d4fa;
     position: absolute;
     left: 1000px; 
-    animation: pillarTwo 15s linear infinite;
 }
 
-@keyframes pillarTwo{
-    from {left: 1000px}
-    to {left:-50px}
-}
 
 #holeTwo {
     width: 50px;
@@ -83,8 +70,6 @@
     position: absolute;
     left: 1000px;
     top: 400px;
-    animation: pillarTwo 15s linear infinite;
-
 }
 
 #ghost {
