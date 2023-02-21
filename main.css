@@ -42,16 +42,16 @@
     height: 600px;
     background: #f9d4fa;
     position: absolute;
-    left: 800px; 
+    left: 800px;    
 }
 
 #holeOne {
     width: 50px;
-    height: 100px;
+    height: 150px;
     background-color: black;
     position: absolute;
     left: 800px;
-    top: 200px;
+    top: 150px;
 }
 
 #pillarTwo {
@@ -59,24 +59,23 @@
     height: 600px;
     background: #f9d4fa;
     position: absolute;
-    left: 1000px; 
+    left: 600px; 
 }
 
 
 #holeTwo {
     width: 50px;
-    height: 100px;
+    height: 150px;
     background-color: black;
     position: absolute;
-    left: 1000px;
-    top: 400px;
+    left: 600px;
+    top: 300px;
 }
 
 #ghost {
-    height: 25px;
-    width: 25px;
-    background: yellow;
-    border: 50px;
+    background-image: url("https://i.ibb.co/rGwrcC3/ghost.png");
+    height: 64px;
+    width: 64px;
     position: absolute;
     z-index: 1;
 }
