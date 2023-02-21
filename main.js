@@ -20,29 +20,28 @@ function startGame() {
     ghost.style.bottom = ghostBottom + "px"
     ghost.style.left = ghostLeft + "px"
     
-    if(ghostBottom === 0 || ghostBottom === 550){
+    if(ghostBottom === 0 || ghostBottom === 520){
         gameEnd();
     }   
 }
 let timerID = setInterval(startGame, 20)
 
 function movePillars() {
-    holeOne.addEventListener("animationiteration", () => {
-        let random = ((Math.random()*200)+50);
-        holeOne.style.top = random + "px";
+    pillarOneLeft -=2
+    pillarTwoLeft -=2
+    holeOneLeft -=2
+    holeTwoLeft -=2
+    pillarOne.style.left = pillarOneLeft + "px"
+    pillarTwo.style.left = pillarTwoLeft + "px"
+    holeOne.style.left = holeOneLeft + "px"
+    holeTwo.style.left = holeTwoLeft + "px"
 
-    holeTwo.addEventListener("animationiteration", () => {
-        let random = ((Math.random()*400)+50);
-        holeTwo.style.top = random + "px";
-        
-        score ++
-        scoreValue.innerHTML = ("Score :" + score);
-    });
-
-    });
+    if(pillarOneLeft === 250 && holeOneLeft === 250 || pillarTwoLeft === 250 && holeTwoLeft === 250){
+        getScore();
+    }
 
 }
-movePillars()
+let pillarID = setInterval(movePillars, 20)
 
 function fly() {
     ghostBottom += 50
