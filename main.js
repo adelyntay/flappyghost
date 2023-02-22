@@ -66,3 +66,12 @@ function gameEnd() {
     document.removeEventListener("click", fly)
     gameOver.innerHTML = ("Game Over");
 }
+
+/*pillars createElement
+
+let pillarsLeft = 800
+const pillars = document.createElement("div");
+display.appendChild(pillars);
+pillars.innerHTML = ("blue");
+pillars.style.left = pillarsLeft + "px";
+pillars.classList.add("pillars");*/
