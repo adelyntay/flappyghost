@@ -45,7 +45,7 @@
     left: 800px;    
 }
 
-#holeOne {
+/*#holeOne {
     width: 50px;
     height: 150px;
     background-color: black;
@@ -70,7 +70,7 @@
     position: absolute;
     left: 600px;
     top: 300px;
-}
+}*/
 
 #ghost {
     background-image: url("https://i.ibb.co/rGwrcC3/ghost.png");
@@ -87,4 +87,13 @@
     margin-left: 410px;
     position: absolute;
     bottom: 500px;
+}
+
+#gap {
+    width: 50px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    top: 150px;
+    left: 800px;
 }
