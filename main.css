@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
+body {
+    display: flex;
+}
+
 #score {
     font-family: "permanent marker", cursive;
     font-size: 30px;
@@ -10,20 +14,36 @@
 
 .display {
     width: 1000px;
-    height: 600px;
-    left: 300px;
+    height: 730px;
+    left: 80px;
     position: absolute;
-    border: 2px solid black;
-    background-image: url(background.png);
     overflow: hidden;
 }
 
-#ghost {
-    background-image: url("https://i.ibb.co/rGwrcC3/ghost.png");
-    height: 64px;
-    width: 64px;
+.top {
+    background-image:url(background.png);
+    width: 1000px;
+    height: 580px;
     position: absolute;
-    z-index: 1;
+}
+
+.ground {
+    background: black;
+    width: 1000px;
+    height: 180px;
+    position: absolute;
+    top: 580px;
+    z-index: +1
+}
+
+.ghost {
+    background-image: url("https://i.ibb.co/rGwrcC3/ghost.png");
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 220px;
+    bottom: 100px;
+    
 }
 
 #gameOver {
@@ -38,14 +58,13 @@
 .pillar {
     background-color: green;
     width: 60px;
-    height: 250px;
-    bottom: 0px;
+    height: 300px;
     position: absolute;
 }
 
-.pillarTwo {
+.topPillar {
     background-color: red;
     width: 60px;
-    height: 250px;
+    height: 300px;
     position: absolute;
 }
