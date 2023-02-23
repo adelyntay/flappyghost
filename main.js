@@ -18,14 +18,14 @@ function startGame() {
 let timerID = setInterval(startGame, 20)
 
 function fly() {
-    if (ghostBottom < 500) ghostBottom += 50
+    ghostBottom += 50
     ghost.style.bottom = ghostBottom + "px"
 }
 document.addEventListener("click", fly)
 
 function generatePillar(){
-    let pillarLeft = 500
-    let randomHeight = Math.random() * 60
+    let pillarLeft = 700
+    let randomHeight = Math.floor(Math.random() * 60)
     let pillarBottom = randomHeight
     const pillar = document.createElement("div")
     const topPillar = document.createElement("div")
@@ -48,6 +48,9 @@ function generatePillar(){
         if (pillarLeft === -50) {
             display.removeChild(pillar)
             display.removeChild(topPillar)
+        }
+        if (pillarLeft === 200) {
+            getScore()
         }
         if (
             pillarLeft > 200 && pillarLeft < 280 && ghostLeft === 220 &&
