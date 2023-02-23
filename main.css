@@ -22,14 +22,14 @@ body {
 }
 
 .top {
-    background-image:url(background.png);
+    background-image:url(second.png);
     width: 1000px;
     height: 580px;
     position: absolute;
 }
 
 .ground {
-    background: black;
+    background: #474E68;
     width: 1000px;
     height: 180px;
     position: absolute;
@@ -57,14 +57,14 @@ body {
 }
 
 .pillar {
-    background-color: green;
+    background-image: url(pillar.png);
     width: 60px;
     height: 300px;
     position: absolute;
 }
 
 .topPillar {
-    background-color: red;
+    background-image: url(pillar.png);
     width: 60px;
     height: 300px;
     position: absolute;
