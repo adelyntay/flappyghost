@@ -14,6 +14,14 @@ I recreate this game replacing the famous bird with a ghost character floating t
 
 ![image](https://user-images.githubusercontent.com/125279959/221002812-a06a8ea1-451e-48f0-9df4-30309e4855b0.png)
 
+## Screenshot
+
+Floating through obstacles
+![image](https://user-images.githubusercontent.com/125279959/221057255-0b7cf934-1af5-4241-9994-5eb41b4c161f.png)
+
+Game over
+![image](https://user-images.githubusercontent.com/125279959/221057435-e7a806a9-d43a-46e2-9927-2b5671e39734.png)
+
 ## Analysis of Code
 
 ###### Callback function
