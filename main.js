@@ -61,7 +61,7 @@ function generatePillar(){
             clearInterval(pillarID)
             }
     }
-    let pillarID = setInterval(movePillar, 30)
+    let pillarID = setInterval(movePillar, 20)
     if (!stopGame) setTimeout(generatePillar, 3000)
 }
 generatePillar()
@@ -77,6 +77,5 @@ function gameEnd() {
     clearInterval(timerID)
     stopGame = true
     document.removeEventListener("click", fly)
-    console.log(gameEnd)
     gameOver.innerHTML = ("Game Over");
 }
