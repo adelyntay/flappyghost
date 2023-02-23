@@ -54,14 +54,14 @@ function generatePillar(){
         }
         if (
             pillarLeft > 200 && pillarLeft < 280 && ghostLeft === 220 &&
-            (ghostBottom < pillarBottom + 153 || ghostBottom > ghostBottom + gap -200) ||
+            (ghostBottom < pillarBottom + 150 || ghostBottom > ghostBottom + gap -200) ||
             ghostBottom === 0
             ) {
             gameEnd()
             clearInterval(pillarID)
             }
     }
-    let pillarID = setInterval(movePillar, 20)
+    let pillarID = setInterval(movePillar, 30)
     if (!stopGame) setTimeout(generatePillar, 3000)
 }
 generatePillar()
@@ -77,5 +77,6 @@ function gameEnd() {
     clearInterval(timerID)
     stopGame = true
     document.removeEventListener("click", fly)
+    console.log(gameEnd)
     gameOver.innerHTML = ("Game Over");
 }
