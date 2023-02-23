@@ -1,6 +1,6 @@
 
 ## Description
-Inspired by the classic hit Flappy Bird
+Inspired by the classic hit Flappy Bird developed by Dong Nguyen, a game that will test your reflexes and patience. I recreate this game replacing the famous bird with a ghost character. The rules are simple: click to make the ghost flap (or in this case, float?) through the obstacles. 
 
 ## Technologies Used
 - HTML
@@ -8,12 +8,20 @@ Inspired by the classic hit Flappy Bird
 - JavaScript
 - Git & GitHub
 
+## Analysis of Code
+
+###### Changing the content of an Element
+
+
+
 ## Future Improvements
+- Collision detection with top pillars
 - Leaderboard
 - Program the Pause button
 - Start button to activate the game
 - BGM
+- Use canvas element to draw graphics 
 
 ## Game Assets 
 All rights belong to the original artists and owners. 
-[Ghost Icon] ("https://www.flaticon.com/free-icons/spirit")
+<a href="https://www.flaticon.com/free-icons/spirit">Ghost Icon</a>
