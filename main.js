@@ -5,10 +5,12 @@ const scoreValue = document.getElementById("score");
 const gameOver = document.getElementById("gameOver");
 
 let score = 0;
+let stopGame = false 
 
 let ghostBottom = 500
 let ghostLeft = 300
 let gravity = 2
+
 
 function startGame() {
     ghostBottom -= gravity
@@ -49,9 +51,7 @@ function generatePillar(){
         if (pillarLeft === 250) {
             getScore()
         }
-        /*if (pillarLeft > 200 && pillarLeft < 280){
-            gameOver()
-        }*/
+        
     }
     setInterval(movePillar, 20)
     setTimeout(generatePillar, 2000)
@@ -59,8 +59,10 @@ function generatePillar(){
 generatePillar()
 
 function getScore() {
+    if (!stopGame) {
     score++;
     scoreValue.innerHTML = ("Score :" + score);
+    }
 }
 
 function fly() {
@@ -73,6 +75,7 @@ document.addEventListener("click", fly)
 
 function gameEnd() {
     clearInterval(timerID)
+    stopGame = true
     document.removeEventListener("click", fly)
     gameOver.innerHTML = ("Game Over");
 }
