@@ -21,15 +21,24 @@ https://adelyntay.github.io/flappyghost/
 ###### Pseudocode for the overall game play
 
 Initialize game state and variables
-Repeat until game is over:
-    Update character and pillar positions
-    Check for collisions 
-    If player input is received (click):
-    Change character state and pillar positions
-    Update score
-    If game over condition is met:
-    End game and show restart button
-    Wait for next frame
+
+Repeat until game is over
+
+Update character and pillar positions
+    
+Check for collisions 
+    
+If player input is received (click):
+    
+Change character state and pillar positions
+    
+Update score
+
+If game over condition is met:
+
+End game and show restart button
+
+Wait for next frame
 
 ###### Manipulating HTML DOM 
 
