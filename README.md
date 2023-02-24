@@ -18,6 +18,19 @@ https://adelyntay.github.io/flappyghost/
 ###### Sketch
 ![image](https://user-images.githubusercontent.com/125279959/221002812-a06a8ea1-451e-48f0-9df4-30309e4855b0.png)
 
+###### Pseudocode for the overall game play
+
+Initialize game state and variables
+Repeat until game is over:
+    Update character and pillar positions
+    Check for collisions 
+    If player input is received (click):
+    Change character state and pillar positions
+    Update score
+    If game over condition is met:
+    End game and show restart button
+    Wait for next frame
+
 ###### Manipulating HTML DOM 
 
 - innerHTML to show the message when game ends
@@ -32,7 +45,7 @@ Floating through obstacles
 
 
 Game over
-![image](https://user-images.githubusercontent.com/125279959/221227126-3ceb1484-df0a-4c44-a66a-b64e0a2b7e10.png)
+![image](https://user-images.githubusercontent.com/125279959/221257944-4356bc2f-1b63-4d1a-bb98-5ed31f96c9a8.png)
 
 
 ## Future Improvements
