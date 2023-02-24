@@ -24,15 +24,14 @@ Game over
 
 ## Analysis of Code
 
-###### Callback function
-A callback function is a function that's passed to another function as an argument.
+- DOM Events allow JavaScript to add event listener or event handlers to HTML elements.
+- The player clicks on the element to trigger the function
+![image](https://user-images.githubusercontent.com/125279959/221058570-bead356c-7376-44be-82ea-cc3040d7e3ee.png)
 
-There are several callback function in this game. 
+- innerHTML is a property of the element that allows you to get or set the HTML markup contained within the element. 
+- This was pass through the function of gameEnd so that the message only appears when condition are met.
 
-
-###### Changing the content of an Element
-
-![image](https://user-images.githubusercontent.com/125279959/221002928-599bee05-61b3-40ec-b479-45ff750caafa.png)
+![image](https://user-images.githubusercontent.com/125279959/221060182-08e53831-ebae-4f07-88d8-4ade2280c1b6.png)
 
 
 ## Future Improvements
