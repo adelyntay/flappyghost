@@ -88,7 +88,7 @@ function gameEnd() {
     stopGame = true
     document.removeEventListener("click", fly)
     gameOver.innerHTML = ("Game Over");
-    restart.innerHTML = ("Restart")
+    restart.innerHTML = ("Press to Restart")
 }
 
 function gameRestart() {
