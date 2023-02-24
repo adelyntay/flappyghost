@@ -1,7 +1,9 @@
-
 ## Description
 Inspired by the classic hit Flappy Bird developed by Dong Nguyen, a game that will test your reflexes and patience. 
-Being a fan of horror aesthetic visuals, I recreate this game by replacing the famous bird with a ghost character floating through the obstacles trying to reach to the end of a classroom hallway.
+
+Being a fan of horror aesthetic visuals, I recreate this game by replacing the famous bird with a ghost character floating through the obstacles trying to reach to the end of a classroom hallway. 
+
+https://adelyntay.github.io/flappyghost/
 
 
 ## Technologies Used
@@ -10,28 +12,27 @@ Being a fan of horror aesthetic visuals, I recreate this game by replacing the f
 - JavaScript
 - Git & GitHub
 
-## Idea Sketch
 
+## Idea Planning
+
+###### Sketch
 ![image](https://user-images.githubusercontent.com/125279959/221002812-a06a8ea1-451e-48f0-9df4-30309e4855b0.png)
 
-## Screenshot
+###### Manipulating HTML DOM 
+
+- innerHTML to show the message when game ends
+- removeEventListener to stop the player using mouse click event to control the ghost
+![image](https://user-images.githubusercontent.com/125279959/221256339-51edd686-a433-46df-aaba-ebd4a9c1200f.png)
+
+
+## Gameplay Screenshot
 
 Floating through obstacles
+![image](https://user-images.githubusercontent.com/125279959/221227058-7b08a1e9-f1fb-4880-95f4-e7fefe8696b9.png)
 
 
 Game over
-
-
-## Analysis of Code
-
-- DOM Events allow JavaScript to add event listener or event handlers to HTML elements.
-- The player clicks on the element to trigger the function
-![image](https://user-images.githubusercontent.com/125279959/221058570-bead356c-7376-44be-82ea-cc3040d7e3ee.png)
-
-- innerHTML is a property of the element that allows you to get or set the HTML markup contained within the element. 
-- This was pass through the function of gameEnd so that the message only appears when condition are met.
-
-![image](https://user-images.githubusercontent.com/125279959/221060182-08e53831-ebae-4f07-88d8-4ade2280c1b6.png)
+![image](https://user-images.githubusercontent.com/125279959/221227126-3ceb1484-df0a-4c44-a66a-b64e0a2b7e10.png)
 
 
 ## Future Improvements
@@ -42,5 +43,6 @@ Game over
 - BGM
 
 ## Game Assets 
-All rights belong to the original artists and owners.<
+All rights belong to the original artists and owners.
+
 <a href="https://www.flaticon.com/free-icons/spirit">Ghost Icon</a>
