@@ -14,7 +14,7 @@ body {
 }
 
 .display {
-    width: 1000px;
+    width: 1980px;
     height: 730px;
     left: 80px;
     position: absolute;
@@ -22,23 +22,23 @@ body {
 }
 
 .top {
-    background-image:url(second.png);
-    width: 1000px;
-    height: 580px;
+    background-image:url(classroom\ bg\ .png);
+    width: 1250px;
+    height: 680px;
     position: absolute;
 }
 
 .ground {
-    background: white;
-    width: 1000px;
-    height: 180px;
+    background:black;
+    width: 1250px;
+    height: 50px;
     position: absolute;
-    top: 580px;
+    top: 680px;
     z-index: +1
 }
 
 .ghost {
-    background-image: url("https://i.ibb.co/rGwrcC3/ghost.png");
+    background-image: url(ghost\ icon.png);
     position: absolute;
     width: 60px;
     height: 60px;
@@ -49,9 +49,9 @@ body {
 
 #gameOver {
     font-family: "permanent marker", cursive;
-    font-size: 30px;
+    font-size: 50px;
     color: red;
-    margin-left: 500px;
+    margin-left: 580px;
     position: absolute;
     bottom: 450px;
 }
