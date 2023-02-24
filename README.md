@@ -29,6 +29,8 @@ Game over
 ![image](https://user-images.githubusercontent.com/125279959/221058570-bead356c-7376-44be-82ea-cc3040d7e3ee.png)
 
 - innerHTML is a property of the element that allows you to get or set the HTML markup contained within the element. 
+- This was pass through the function of gameEnd so that the message only appears when condition are met.
+
 ![image](https://user-images.githubusercontent.com/125279959/221060182-08e53831-ebae-4f07-88d8-4ade2280c1b6.png)
 
 
