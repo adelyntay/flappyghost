@@ -1,7 +1,7 @@
 
 ## Description
 Inspired by the classic hit Flappy Bird developed by Dong Nguyen, a game that will test your reflexes and patience. 
-I recreate this game replacing the famous bird with a ghost character floating through the obstacles. 
+Being a fan of horror aesthetic visuals, I recreate this game by replacing the famous bird with a ghost character floating through the obstacles trying to reach to the end of a classroom hallway.
 
 
 ## Technologies Used
@@ -17,10 +17,10 @@ I recreate this game replacing the famous bird with a ghost character floating t
 ## Screenshot
 
 Floating through obstacles
-![image](https://user-images.githubusercontent.com/125279959/221057255-0b7cf934-1af5-4241-9994-5eb41b4c161f.png)
+
 
 Game over
-![image](https://user-images.githubusercontent.com/125279959/221057435-e7a806a9-d43a-46e2-9927-2b5671e39734.png)
+
 
 ## Analysis of Code
 
@@ -35,7 +35,6 @@ Game over
 
 
 ## Future Improvements
-- Collision detection with top pillars
 - Use canvas element 
 - Leaderboard
 - Program the Pause button
@@ -43,5 +42,5 @@ Game over
 - BGM
 
 ## Game Assets 
-All rights belong to the original artists and owners. 
+All rights belong to the original artists and owners.<
 <a href="https://www.flaticon.com/free-icons/spirit">Ghost Icon</a>
