@@ -56,6 +56,15 @@ body {
     bottom: 450px;
 }
 
+#restart {
+    font-family: "permanent marker", cursive;
+    font-size: 50px;
+    color: red;
+    margin-left: 620px;
+    position: absolute;
+    bottom: 370px;
+}
+
 .pillar {
     background-image: url(Images/pillar.png);
     width: 60px;

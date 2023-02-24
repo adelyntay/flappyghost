@@ -3,17 +3,20 @@ const ghost = document.querySelector(".ghost")
 const scoreValue = document.getElementById("score")
 const gameOver = document.getElementById("gameOver")
 const ground = document.querySelector(".ground")
+const restart = document.getElementById("restart")
 
 let ghostBottom = 200
 let ghostLeft = 220
 let gravity = 2
 let flyHeight = 50
 
-let gap = 430
 let score = 0
 let stopGame = false 
 
 let pillarStartingPosition = 500
+let pillarOffDisplayPosition = -50
+let pillarMoveSize = 2
+let gap = 430
 
 function startGame() {
     ghostBottom -= gravity
@@ -50,11 +53,11 @@ function generatePillar(){
     topPillar.style.bottom = pillarBottom + gap + "px"
     
     function movePillar() {
-        pillarLeft -=2
+        pillarLeft -= pillarMoveSize
         pillar.style.left = pillarLeft + "px"
         topPillar.style.left = pillarLeft + "px"
 
-        if (pillarLeft === -50) {
+        if (pillarLeft === pillarOffDisplayPosition) {
             display.removeChild(pillar)
             display.removeChild(topPillar)
         }
@@ -85,4 +88,9 @@ function gameEnd() {
     stopGame = true
     document.removeEventListener("click", fly)
     gameOver.innerHTML = ("Game Over");
+    restart.innerHTML = ("Restart")
+}
+
+function gameRestart() {
+    window.location.reload();
 }
