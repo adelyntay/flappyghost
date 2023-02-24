@@ -22,7 +22,7 @@ body {
 }
 
 .top {
-    background-image:url(classroom\ bg\ .png);
+    background-image:url(Images/classroom\ bg\ .png);
     width: 1250px;
     height: 680px;
     position: absolute;
@@ -38,7 +38,7 @@ body {
 }
 
 .ghost {
-    background-image: url(ghost\ icon.png);
+    background-image: url(Images/ghost\ icon.png);
     position: absolute;
     width: 60px;
     height: 60px;
@@ -57,14 +57,14 @@ body {
 }
 
 .pillar {
-    background-image: url(pillar.png);
+    background-image: url(Images/pillar.png);
     width: 60px;
     height: 300px;
     position: absolute;
 }
 
 .topPillar {
-    background-image: url(pillar.png);
+    background-image: url(Images/pillar.png);
     width: 60px;
     height: 300px;
     position: absolute;
